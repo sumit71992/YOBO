@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>
+New User Register
+</title>
+<link rel="stylesheet" href="newstyle.css">
+
+</head>
+<body>
+<script>
+
+function validate(){
+
+var fn= document.getElementById("fname").value;
+
+var ln= document.getElementById("lname").value;
+
+var pass= document.getElementById("pwd").value;
+
+var email= document.getElementById("eid").value;
+
+var phon= document.getElementById("pho").value;
+
+
+alert(" $10 added,please Sign In");
+
+ 
+
+}
+
+</script>
+
+<br>
+<br>
+
+<form   >
+ <h1> Create a new account </h1>
+<table >
+
+<tr>
+<td>
+<label> First name<sup>*</sup>: </label>
+</td>
+<td>
+<input type="text" name="fname" id="fname" size="23" > 
+</td>
+</tr>
+ 
+
+<tr>
+<td>
+
+<label> Last name<sup>*</sup>: </label>  
+ 
+</td>
+<td>
+<input type="text" name="lname" id="lname"  size="23"> 
+</td> 
+</tr>
+
+
+<tr>
+<td>
+
+<label> Password<sup>*</sup>: </label>  
+ 
+</td>
+<td>
+<input type="password" name="pwd" id="pwd" size="23" > 
+</td> 
+</tr>
+
+
+
+<tr>
+<td>
+<label> Email Id<sup>*</sup>: </label>
+</td>
+<td>
+
+<input type="email" name="email" id="eid" size="23"> 
+</td>
+</tr>
+<tr>
+<td>
+<label> Phone<sup>*</sup>: </label>
+</td>
+<td>
+<input type="text" name="country code"  value="+91" size="2"/>   
+<input type="text" name="phone" id="pho" size="16"/> 
+</td>
+</tr>
+<br>
+
+<tr>
+<td>
+<label> Address<sup>*</sup>: </label>
+</td>
+<td>
+<textarea cols="25" rows="5" value="address">  
+</textarea> 
+</td>
+</tr>
+
+
+<tr>
+<td>
+<label> State<sup>*</sup>: </label>
+</td>
+<td>
+
+<select class="opt"  name:"state">  
+<option value="Course">Select state</option>  
+<option value="BCA">Karnataka</option>  
+<option value="BBA">Kerala</option>  
+<option value="B.Tech">Delhi </option>  
+<option value="MBA">Goa</option>  
+<option value="MCA">Haryana</option>  
+<option value="M.Tech">Odisha</option>  
+</select>
+</td>
+</tr>
+
+<tr>
+<td>
+<label> Country<sup>*</sup>: </label>
+</td>
+<td>
+
+<select class="opt"  name:"state">  
+<option value="Course">Select country</option>  
+<option value="BCA">India</option>  
+<option value="BBA">Indonesia</option>  
+<option value="B.Tech">New Zealand </option>  
+<option value="MBA">Philippines</option>  
+<option value="MCA">Switzerland</option>  
+<option value="M.Tech">United Kingdom</option>  
+</select>
+</td>
+</tr>
+
+
+
+</table>
+
+<p class="para"/ > I Agree to the <a href="YOBO.docx">Terms and Conditions</a> of  YOBO Membership by clicking the Pay membership button below.</p>
+
+
+<input type="submit" value="Pay" onclick= "validate()" class="banner">
+
+
+<p class="para1">Membership non-refundable one time enrollment fee is $5
+You will be directed to our Payment Gateway  </p>
+
+
+
+</form>
+
+<a href="SignInpage.html" class="Sign"> SignIn </a>
+</body>
+
+</html>
+
+
+
