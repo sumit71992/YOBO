@@ -1,0 +1,287 @@
+*{
+  margin: 0;
+  padding: 0;
+font-family: Century Gothic;
+
+}
+
+html{
+background:#F4A460;
+}
+
+
+
+ .main ul {
+    
+ width: 100%;
+ background: #262626;
+ overflow: hidden;
+ position: fixed;
+ top:1%;
+
+
+}
+
+
+.main ul li{
+    display: inline-block;
+   padding:20px ;
+ 
+   
+}
+.main ul li a{
+ color:#0000FF;
+  
+ 
+}
+
+ .click-in{
+ border: 1px solid black;
+   width: 145px;
+   height:25px;
+   padding: 8px 10px;
+   background: #F0E68C;
+    position:absolute;
+  left:54%;
+  top:12%;
+
+}
+
+h1{
+color:#C71585;
+
+}
+
+.hello{
+    position: absolute;
+    top: 4%;
+    left: 78%;
+    color:#B0E0E6;
+
+}
+
+
+.button{
+ width:80px;
+height:30px;
+   
+position:absolute;
+top:4%;
+left:89%;
+}
+
+
+
+ul.breadcrumb {
+ 
+  list-style: none;
+  position:absolute;
+  top:13%;
+  left:1%;'
+
+ 
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline-block;
+  font-size: 14px;
+
+ padding:3px;
+
+
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+
+  color: black;
+  content: "/\00a0";
+  
+
+
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #000080;
+  text-decoration: none;
+     
+ 
+
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+
+
+ .menu{
+
+   position: absolute;
+   top: 18%;
+   left: 65px
+  
+ 
+}
+
+.menu ul  {
+     
+    display: inline-flex;
+   
+     margin:  30px; 
+ 
+
+}
+.menu ul li {
+    width: 150px;
+    height: 40px;
+   list-style-type: none;
+   margin: 0 40px;
+   cursor: pointer;
+   border: 1px solid ;
+   display: block;
+   padding: 25px 22px;
+   background: #BC8F8F;
+   text-align: center;  
+
+}
+.menu ul li a {
+color:black;
+text-decoration:none;
+word-spacing:2px;
+}
+
+
+.box{
+
+   border: 1px solid black;
+   width: 470px;
+   height:250px;
+   padding: 8px 10px;
+   background: #FF7F50;
+   position:absolute;
+  left:14%;
+  top:50%;
+
+
+}
+
+
+
+
+.edu ul  {
+     
+    display: inline-flex; 
+    margin:  1px;
+ 
+  } 
+
+.edu ul li {
+ 
+   text-align:center;
+   font-size:11px;
+   margin:5px;
+   cursor: pointer;
+   border: 1px solid ;
+   width: 77px;
+   height:20px;
+   padding: 3px 2px;
+   display: block;
+   background: #FFC0CB; 
+ 
+}
+
+.ent ul  {
+     
+    display: inline-flex;
+    margin:  1px;
+ 
+  } 
+
+.ent ul li {
+ 
+   text-align:center;
+   font-size:11px;
+   margin:5px;
+   cursor: pointer;
+   border: 1px solid ;
+   width: 77px;
+   height:20px;
+   padding: 3px 2px;
+   display: block;
+   background:#FFC0CB; 
+ 
+}
+
+.trad ul  {
+     
+    display: inline-flex;  
+    margin:  1px;
+ 
+  } 
+
+.trad ul li {
+ 
+   text-align:center;
+   font-size:11px;
+   margin:5px;
+   cursor: pointer;
+   border: 1px solid ;
+   width: 77px;
+   height:20px;
+   padding: 3px 2px;
+   display: block;   
+   background: #FFC0CB; 
+ 
+}
+
+
+.info ul  {
+     
+    display: inline-flex;  
+    margin:  1px;
+ 
+  } 
+
+.info ul li {
+ 
+   text-align:center;
+   font-size:11px;
+   margin:5px;
+   cursor: pointer;
+   border: 1px solid ;
+   width: 77px;
+   height:20px;
+   padding: 3px 2px;
+   display: block;  
+   background:#FFC0CB; 
+ 
+}
+
+
+.promo{
+
+    width: 27%;
+    height: 200px;
+    object-fit: cover;
+    z-index: -100;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    margin: 0 auto;
+    border: 1px solid black;
+        
+
+}
+
+
+.video{
+    position: absolute;
+    top: 45%;
+    left: 55%;
+    color:#0000CD;
+}
