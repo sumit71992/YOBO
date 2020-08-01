@@ -1,0 +1,272 @@
+*{
+  margin: 0;
+  padding: 0;
+ font-family: Century Gothic;
+
+}
+
+html{
+background:#ADD8E6;
+}
+
+
+
+
+
+h1{
+background:black;
+text-align:center;
+color:white;
+padding:5px;
+
+}
+p{
+position:absolute;
+top:10%;
+left:80%;
+
+}
+
+.button{
+ width:80px;
+height:30px;
+   
+position:absolute;
+top:9%;
+left:90%;
+}
+
+
+ul.breadcrumb {
+ 
+  list-style: none;
+  position:absolute;
+  top:15%;
+  left:9%;'
+
+ 
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline-block;
+  font-size: 14px;
+
+ padding:3px;
+
+
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+
+  color: black;
+  content: "/\00a0";
+  
+
+
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #000080;
+  text-decoration: none;
+     
+ 
+
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+
+
+
+
+.box{
+
+   border: 1px solid black;
+   width: 470px;
+   height:250px;
+   padding: 8px 10px;
+   background: #FF7F50;
+   position:absolute;
+  left:9%;
+  top:22%;
+
+
+}
+
+.edu ul  {
+     
+    display: inline-flex; 
+    margin:  1px;
+ 
+  } 
+
+.edu ul li {
+ 
+   text-align:center;
+   font-size:11px;
+   margin:5px;
+   cursor: pointer;
+   border: 1px solid ;
+   width: 77px;
+   height:20px;
+   padding: 3px 2px;
+   display: block;
+   background: #FFC0CB; 
+ 
+}
+
+
+
+.ent ul  {
+     
+    display: inline-flex;
+    margin:  1px;
+ 
+  } 
+
+.ent ul li {
+ 
+   text-align:center;
+   font-size:11px;
+   margin:5px;
+   cursor: pointer;
+   border: 1px solid ;
+   width: 77px;
+   height:20px;
+   padding: 3px 2px;
+   display: block;
+   background:#FFC0CB; 
+ 
+}
+
+.trad ul  {
+     
+    display: inline-flex;  
+    margin:  1px;
+ 
+  } 
+
+.trad ul li {
+ 
+   text-align:center;
+   font-size:11px;
+   margin:5px;
+   cursor: pointer;
+   border: 1px solid ;
+   width: 77px;
+   height:20px;
+   padding: 3px 2px;
+   display: block;   
+   background: #FFC0CB; 
+ 
+}
+
+
+.info ul  {
+     
+    display: inline-flex;  
+    margin:  1px;
+ 
+  } 
+
+.info ul li {
+ 
+   text-align:center;
+   font-size:11px;
+   margin:5px;
+   cursor: pointer;
+   border: 1px solid ;
+   width: 77px;
+   height:20px;
+   padding: 3px 2px;
+   display: block;  
+   background:#FFC0CB; 
+ 
+}
+
+
+table{
+  width: 35%;  
+  padding: 10px;  
+  margin: 5px 0 22px 0;
+  margin:-25px;
+  font-size:17px;
+  position: absolute;
+  top:23%;
+  left:55%;
+
+  }
+
+
+label{
+  cursor: pointer;
+  text-indent: 35px;
+  overflow: visible;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 20px;
+ 
+
+}
+.input{
+
+width:15%:
+height:20%;
+cols:25;
+rows:5;
+size:26;
+
+
+}
+.upload{
+  width: 90px; height: 36px; 
+  margin: 20px 35px 25px 0px;
+  position: absolute;
+  top: 130%;
+  left: 70%;
+ background-color:;
+}
+
+.check{
+
+ 
+  width:665px;
+  height:50px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+
+ }
+
+input[type=checkbox] {
+
+ -ms-transform: scale(1.5); /* IE */
+ -moz-transform: scale(1.5); /* FF */
+ -webkit-transform: scale(1.5); /* Safari and Chrome */
+ -o-transform: scale(1.5); /* Opera */
+  padding: 10px;
+}
+  select {
+        width: 200px;
+       border:black;
+    }
+ 
+.browse{
+
+ position:absolute;
+ left:69%;
+ top:73%;
+
+}
+
+
+
+
+
