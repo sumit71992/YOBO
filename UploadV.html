@@ -1,0 +1,216 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<link rel="stylesheet" type="text/css" href="upload.css">
+</head>
+
+<script type="text/javascript">
+
+        var subcategory = {
+            Education: ["Courses", "Counselling", "Geography","History","Videopedia"],
+            Entertainment: ["Plays", "Documentary", "Shorties","Travel","Games"],
+            Tradition: ["Religion", "Recipes", "Discourses","Culture","other"],
+            Information: ["News", "How to Guide", "Stock tips","Consumer","Other"]
+        }
+
+        function makeSubmenu(value) {
+            if (value.length == 0) document.getElementById("categorySelect").innerHTML = "<option></option>";
+            else {
+                var citiesOptions = "";
+                for (categoryId in subcategory[value]) {
+                    citiesOptions += "<option>" + subcategory[value][categoryId] + "</option>";
+                }
+                document.getElementById("categorySelect").innerHTML = citiesOptions;
+            }
+        }
+
+       
+        function resetSelection() {
+            document.getElementById("category").selectedIndex = 0;
+            document.getElementById("categorySelect").selectedIndex = 0;
+        }
+
+       function validate(){
+
+alert("Uploaded sucessfully");
+
+}
+
+</script>
+
+<body>
+
+   <h1> Upload Video </h1>
+   <p>Hello -</p>
+   <form action="Homepage1.html" method="post">
+      <input type="submit" value="Log off" class="button">
+
+      
+      <ul class="breadcrumb">
+
+        <li><a  href="#">Home</a></li>
+        <li><a   href="Uploadv.html">Upload Video</a></li>
+        <li><a  href="#">Education</a></li>
+        <li><a href="#">Course</a></li>
+
+     </ul>
+
+
+
+   <div class="box">
+
+
+        <div class="edu">
+            Education 
+
+                  <ul>
+                     <li> Courses</li>
+                     <li> Counseling</li>
+                     <li> Geography</li>
+                     <li> History</li>
+                     <li> Video</li>
+                  </ul>
+        </div>
+
+
+
+        <div class="ent">
+            Entertainment
+
+                     <ul>
+                       <li> Plays</li>
+                       <li> Documentary</li>
+                       <li> Shorties</li>
+                       <li> Travel</li>
+                       <li> Games</li>
+                     </ul>
+        </div>
+
+
+
+       <div class="trad">
+             Tradition
+
+                   <ul>
+                     <li> Religion</li>
+                     <li> Recipes</li>
+                     <li> Discourses</li>
+                     <li>Culture</li>
+                     <li> other</li>
+                   </ul>
+       </div>
+
+
+ 
+      <div class="info">
+           Information
+
+                  <ul>
+                    <li> News</li>
+                    <li> How to guide</li>
+                    <li> Stock tips</li>
+                    <li>Consumer</li>
+                    <li> other</li>
+                  </ul> 
+      </div>
+
+
+  </div>
+
+ 
+  <table>
+ 
+     <tr>
+       <td>
+           <label> Video Title<sup>*</sup>: </label> 
+       </td>
+       <td>  
+           <input type="text" name="title" id="title"  size="28"> 
+      </td>
+    </tr>
+
+    <tr>
+       <td>
+          <label> About the Video<sup>*</sup>: </label>  
+       </td>
+       <td>  
+          <textarea  cols="21" rows="3" value="address" placeholder="User can enter upto 100 words about the video" >  
+          </textarea>  
+       </td>
+   </tr>
+
+   <tr>
+       <td>
+          <label>  Catalog Category<sup>*</sup>: </label>  
+       </td>
+  
+       <td>
+          <select id="category" size="1" onchange="makeSubmenu(this.value)">
+            <option value="" disabled selected>Choose Catalog Category</option>
+            <option>Education</option>
+            <option>Entertainment</option>
+            <option>Tradition</option>
+            <option>Information</option>
+         </select>
+      </td>
+   </tr>
+
+   <tr>
+      <td>
+          <label> Subcategory<sup>*</sup>: </label>  
+      </td>
+      <td> 
+          <select id="categorySelect" size="1">
+            <option value="" disabled selected>Choose Subcategory</option>
+            <option></option>
+          </select>
+     </td>
+   </tr>
+
+   <tr>
+     <td>
+          <label> Video Format<sup>*</sup>: </label>  
+     </td>
+     <td>  
+          <select name="Video">
+            <option value="mp4">mp4 </option>
+            <option value="ogg">ogg </option>
+            <option value="webm">webm </option>
+            <option value="3gp">3gp </option>
+     </td>
+   </tr>
+
+  <tr>
+     <td>
+         <label> Initial Offer Price<sup>*</sup>: </label>  
+     </td>
+     <td>  
+        <input type="text" name="title" id="title" size="28"> 
+    </td>
+  </tr>
+        <input type="file" id="myFile" name="filename" accept="video/*" class="browse">
+    
+   <tr>
+    <td>
+        <input type="submit" value="Upload" class="upload" onclick="validate()">
+ 
+    </td>
+
+   </tr>
+
+
+ </table>
+ 
+   </form>
+
+ <div class="check">
+
+      <input type="checkbox" id="yobo1" name="yobo1" value="yobo"> I state that I am the sole owner of this video and am authorized to post it on YOBO. 
+      I accept the  <a href="homepage1.html"> terms and conditions </a> 
+
+  </div>
+
+
+</body>
+</html>
