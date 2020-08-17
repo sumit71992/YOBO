@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Card</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style>
+
+.nav{
+
+margin-top:15px;
+
+
+
+
+}
+
+
+ul li a{
+
+font-size:20px;
+color:#87CEFA; 
+padding: 20px;
+
+}
+
+body  
+{
+  //display:flex;
+ // justify-content: center;
+ //align-items: center;
+ //min-height:100vh;
+ //flex-wrap: wrap;
+background-color: black;
+ //background: #010615;
+
+  
+
+ }
+
+
+.container-fluid ul li a{
+
+font-size:22px;
+color:#87CEFA; 
+padding: 30px;
+
+}
+
+
+
+
+.container-fluid ul li{
+
+padding: 5px 4px;
+margin:5px;
+
+
+
+}
+
+
+
+ #click-in {
+
+  
+     border: 1px solid black;
+     width: 450px;
+     height:80px;
+     float:right;
+     background: #F08080;
+     text-align:center;
+     color: black;
+    padding: 5px 2px;
+    margin-left:90px;
+    
+  }
+
+
+
+  
+
+
+.card{
+
+height:90px;
+
+}
+.card-text{
+
+font-size:21px;
+
+
+}
+button{
+
+margin-top:10px;
+margin-right:30px;
+float:right;
+color:black;
+font-size:20px;
+
+}
+
+button a{
+
+
+color:black;
+font-size:15px;
+
+}
+
+
+
+
+h4{
+float:right;
+margin-right:120px;
+margin-top:18px;
+
+
+}
+.box{
+
+     padding:1px 10px;
+     border: 2px solid white;
+     width: 500px;
+     height:460px;
+     margin-left:30px;
+     color:white;
+     
+
+}
+.btn{
+
+margin-left: 30px;
+
+
+}
+#nonedit{
+
+margin:3px;
+
+}
+#submit{
+margin:10px 10px;
+
+
+}
+</style>
+</head>
+<body> 
+
+ 
+<div class="container-fluid">
+
+<button type="button" class="badge badge-pill badge-warning"><a class="nav-link" href="Homepage1.html">Log off </a></button>  
+ <h4 style="color:white"> Hello </h4>
+
+
+<ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#"><u><b><i>YOBO Home </i></b></u></a>
+    </li>
+   
+    <li class="nav-item  nav-right">
+      <a class="nav-link " id="click-in" href="#"><u><b><i> Add Insertion</i></b></u></a>
+    </li>
+  </ul>
+
+
+ </div>
+ <br>
+</br>
+<div class="container">
+
+
+  
+  
+<div class="box">
+
+   
+
+<form role="form">
+
+     <table >
+     
+    <div class="form-group">
+   
+   
+        
+
+           <tr>
+           <td>
+         <label for="name"> Element Id<sup>*</sup>: </label>
+        <div class="input-group">
+           </td>
+
+           <td> 
+       <input type="text"   size="23" class="editField"  readonly id="mySelect" > 
+       </div>
+       </td>
+       
+     
+        <td>
+        <div class='row text-center'>
+    <a class="btn btn-primary editBtn" >Edit </a>
+     </div>
+    </td>
+  
+       </tr>
+
+
+
+
+       <tr>
+           <td>
+         <label for="name"> Element Type<sup>*</sup>: </label>
+        <div class="input-group">
+           </td>
+            
+
+           <td> 
+       <input type="text"   size="23" class="editField"  readonly id="mySelect" > 
+           </td>
+          
+       </div>
+  
+ 
+        <td>
+        <div class='row text-center'>
+    <a class="btn btn-primary editBtn" >Edit </a>
+     </div>
+    </td>
+   
+    </tr>
+
+
+        <tr>
+           <td>
+         <label for="name"> Vendor<sup>*</sup>: </label>
+        <div class="input-group">
+           </td>
+            
+
+           <td> 
+       <input type="text"   size="23" class="editField"  readonly  id="mySelect"> 
+           </td>
+          
+       </div>
+     <td>
+        <div class='row text-center'>
+    <a class="btn btn-primary editBtn" >Edit </a>
+     </div>
+    </td>
+   </tr>    
+
+
+        <tr>
+           <td>
+         <label for="name">When Deployed<sup>*</sup>: </label>
+        <div class="input-group">
+           </td>
+            
+
+           <td> 
+       <input type="text"   size="23" class="editField"  readonly  id="mySelect"> 
+           </td>
+        
+       </div>
+
+       
+      <td>
+        <div class='row text-center'>
+    <a class="btn btn-primary editBtn" >Edit </a>
+     </div>
+    </td>
+       </tr>
+     
+
+
+
+
+       <tr>
+           <td>
+         <label for="name">Physical location<sup>*</sup>: </label>
+        <div class="input-group">
+           </td>
+            
+
+           <td> 
+       <input type="text"   size="23" value="xyz" class="editField"  readonly id="mySelect" > 
+           </td>
+       </div>
+
+        <td>
+        <div class='row text-center'>
+    <a class="btn btn-primary editBtn" >Edit </a>
+     </div>
+    </td>
+       </tr>
+
+
+   
+
+          <tr>
+           <td>
+         <label for="name">Status<sup>*</sup>: </label>
+        <div class="input-group">
+           </td>
+            
+
+
+           <td> 
+ 
+       <select class="editField"  id="mySelect" >
+        <option value="Operational"> Operational </option>
+        <option value="Down">Down </option>
+        <option value="Deprecated">Deprecated </option>
+      </select>
+           </td>
+       </div>
+
+        <td>
+        <div class='row text-center'>
+    <a class="btn btn-primary editBtn" >Edit </a>
+     </div>
+    </td>
+       </tr>
+
+
+
+
+           <tr>
+           <td>
+      <label for="name">Spare?</label>
+      <div class="input-group" id="nonedit">
+         </td>
+
+         <td>  
+            
+     <select  id="mySelect">
+        <option value="yes"> Yes</option>
+        <option value=No">No </option>
+      </select>
+        </td>
+        </tr>
+
+      </div>
+       
+
+   <tr>
+           <td>
+      <label for="name">Config Info</label>
+      <div class="input-group"  id="nonedit">
+         </td>
+         <td>  
+            
+     <textarea cols="20" rows="3" value="address" id="mySelect">  
+     </textarea> 
+        </td>
+        </tr>
+
+      </div>
+    
+
+     <tr>
+     <td>
+      <button type="button" onclick="myFunction()">Add</button>
+     </td>
+     <td>
+     <button onclick="myFunction()">Remove</button>
+     </td>
+     </tr>
+       </div>
+</table>
+ 
+</form>
+ 
+
+ </div>
+
+</div>
+<script>
+$(document).ready(function () {
+    $('.editBtn').click(function () {
+        if ($('.editField').is('[readonly]')) { //checks if it is already on readonly mode
+            $('.editField').prop('readonly', false);//turns the readonly off
+            $('.editBtn').html('Edit'); //Changes the text of the button
+            $('.editBtn').css("background", "green"); //changes the background of the button
+            $('.editBtn').css("border", "green"); //changes the border of the button
+        } else { //else we do other things
+            $('.editField').prop('readonly', true);
+            $('.editBtn').html('Edit');
+            $('.editBtn').css("background", "grey");
+        }
+    });
+
+});
+
+function myFunction() {
+  var x = document.getElementById("mySelect");
+  x.remove(x.selectedIndex);
+}
+
+function myFunction() {
+  var x = document.getElementById("mySelect");
+  var option = document.createElement("option");
+  
+  x.add(option);
+}
+
+</script>
+</body>
+</html>
