@@ -202,14 +202,14 @@ margin:10px 10px;
            </td>
 
            <td> 
-       <input type="text"   size="23" class="editField"  readonly id="mySelect" > 
+       <input type="text"   size="23" class="editField"  readonly=('readonly') id="element" > 
        </div>
        </td>
        
      
         <td>
         <div class='row text-center'>
-    <a class="btn btn-primary editBtn" >Edit </a>
+    <a class="btn btn-primary editBtn" id="editElement" >Edit </a>
      </div>
     </td>
   
@@ -387,21 +387,14 @@ margin:10px 10px;
 
 </div>
 <script>
-$(document).ready(function () {
-    $('.editBtn').click(function () {
-        if ($('.editField').is('[readonly]')) { //checks if it is already on readonly mode
-            $('.editField').prop('readonly', false);//turns the readonly off
-            $('.editBtn').html('Edit'); //Changes the text of the button
-            $('.editBtn').css("background", "green"); //changes the background of the button
-            $('.editBtn').css("border", "green"); //changes the border of the button
-        } else { //else we do other things
-            $('.editField').prop('readonly', true);
-            $('.editBtn').html('Edit');
-            $('.editBtn').css("background", "grey");
-        }
-    });
-
-});
+var icon = document.getElementById("editElement");
+    var text = document.getElementById("element");
+    text.onblur = function () {
+      this.setAttribute('readonly');
+    }
+    icon.onclick = function () {
+      text.removeAttribute('readonly')
+    }
 
 function myFunction() {
   var x = document.getElementById("mySelect");
